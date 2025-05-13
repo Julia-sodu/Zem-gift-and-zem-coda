@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zem Center</title>
+  <style>
+    :root {
+      --main-bg: #fdf6ee;
+      --accent: #c8a96a;
+      --text: #3c3c3c;
+      --border: #e0d6c6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background-color: #fffdf8;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    input[type="text"] {
+      padding: 0.5rem;
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .fb-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zem Center</h1>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#setting">Cài đặt</a>
+      <a href="#history">Lịch sử trao đổi</a>
+      <a href="#points">Tích điểm</a>
+      <a href="#redeem">Nhập mã</a>
+      <a href="#services">Dịch vụ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="home">
+      <h2>Trang chủ</h2>
+      <p>Chào mừng bạn đến với Zem Center – nơi bạn có thể quản lý, trao đổi, và nhận quà từ Zem một cách dễ dàng.</p>
+    </section>
+
+    <section id="services">
+      <h2>Dịch vụ</h2>
+      <ul>
+        <li><strong>Zem Gift:</strong> Tặng quà thành viên.</li>
+        <li><strong>Zem Coda:</strong> Nạp tiền Coda Shop.</li>
+        <li><strong>Edit Picture:</strong> Chỉnh ảnh.</li>
+        <li><strong>Trade Coin:</strong> Đổi tiền.</li>
+        <li><strong>Lucky Box:</strong> Mở hộp may mắn.</li>
+      </ul>
+    </section>
+
+    <section id="redeem">
+      <h2>Nhập mã</h2>
+      <label for="codeInput">Nhập mã của bạn:</label>
+      <input type="text" id="codeInput" placeholder="Nhập mã tại đây..." />
+    </section>
+
+    <section id="points">
+      <h2>Tích điểm</h2>
+      <p>Tham gia các hoạt động của Zem Center để nhận điểm thưởng và đổi quà hấp dẫn.</p>
+    </section>
+
+    <section id="history">
+      <h2>Lịch sử trao đổi</h2>
+      <p>Hiển thị các giao dịch và trao đổi bạn đã thực hiện tại Zem Center.</p>
+    </section>
+
+    <section id="setting">
+      <h2>Cài đặt</h2>
+      <p>Chỉnh sửa thông tin cá nhân, cài đặt tài khoản, và các tùy chọn bảo mật.</p>
+    </section>
+
+    <section>
+      <h2>Liên hệ</h2>
+      <p>Kết nối với Zem tại:</p>
+      <a class="fb-link" href="https://www.facebook.com/zem.center" target="_blank">Facebook Zem Center</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Zem Center. All rights reserved.
+  </footer>
+
+</body>
+</html>
